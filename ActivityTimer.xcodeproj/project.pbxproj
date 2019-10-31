@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		57126B4823626E0B000852DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B4723626E0A000852DD /* AppDelegate.swift */; };
 		57126B4A23626E0B000852DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B4923626E0B000852DD /* SceneDelegate.swift */; };
-		57126B4C23626E0B000852DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B4B23626E0B000852DD /* ViewController.swift */; };
 		57126B4F23626E0B000852DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57126B4D23626E0B000852DD /* Main.storyboard */; };
 		57126B5123626E13000852DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57126B5023626E13000852DD /* Assets.xcassets */; };
 		57126B5423626E13000852DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57126B5223626E13000852DD /* LaunchScreen.storyboard */; };
+		57126B61236271BA000852DD /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B60236271BA000852DD /* ActivitiesTableViewController.swift */; };
+		57126B63236271EB000852DD /* NewActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B62236271EB000852DD /* NewActivityTableViewController.swift */; };
+		57126B65236272B8000852DD /* EditActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B64236272B8000852DD /* EditActivityTableViewController.swift */; };
+		57126B6723627308000852DD /* ActivityTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B6623627308000852DD /* ActivityTypesTableViewController.swift */; };
+		57126B6923627325000852DD /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B6823627325000852DD /* LocationsTableViewController.swift */; };
+		57126B6B2362733E000852DD /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B6A2362733E000852DD /* Activity.swift */; };
+		57126B6D23627375000852DD /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57126B6C23627375000852DD /* ActivityTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57126B4423626E0A000852DD /* ActivityTimeManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTimeManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57126B4423626E0A000852DD /* ActivityTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57126B4723626E0A000852DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57126B4923626E0B000852DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57126B4B23626E0B000852DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57126B4E23626E0B000852DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57126B5023626E13000852DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57126B5323626E13000852DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57126B5523626E13000852DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57126B60236271BA000852DD /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		57126B62236271EB000852DD /* NewActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityTableViewController.swift; sourceTree = "<group>"; };
+		57126B64236272B8000852DD /* EditActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityTableViewController.swift; sourceTree = "<group>"; };
+		57126B6623627308000852DD /* ActivityTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypesTableViewController.swift; sourceTree = "<group>"; };
+		57126B6823627325000852DD /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		57126B6A2362733E000852DD /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		57126B6C23627375000852DD /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +52,7 @@
 		57126B3B23626E0A000852DD = {
 			isa = PBXGroup;
 			children = (
-				57126B4623626E0A000852DD /* ActivityTimeManager */,
+				57126B4623626E0A000852DD /* ActivityTimer */,
 				57126B4523626E0A000852DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +60,69 @@
 		57126B4523626E0A000852DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57126B4423626E0A000852DD /* ActivityTimeManager.app */,
+				57126B4423626E0A000852DD /* ActivityTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57126B4623626E0A000852DD /* ActivityTimeManager */ = {
+		57126B4623626E0A000852DD /* ActivityTimer */ = {
+			isa = PBXGroup;
+			children = (
+				57126B5E23626EA2000852DD /* Models */,
+				57126B5C23626E51000852DD /* Controllers */,
+				57126B5B23626E3A000852DD /* Views */,
+				57126B4D23626E0B000852DD /* Main.storyboard */,
+				57126B5523626E13000852DD /* Info.plist */,
+				57126B5F23626EAC000852DD /* Supporting Files */,
+			);
+			path = ActivityTimer;
+			sourceTree = "<group>";
+		};
+		57126B5B23626E3A000852DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57126B6C23627375000852DD /* ActivityTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		57126B5C23626E51000852DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57126B60236271BA000852DD /* ActivitiesTableViewController.swift */,
+				57126B62236271EB000852DD /* NewActivityTableViewController.swift */,
+				57126B64236272B8000852DD /* EditActivityTableViewController.swift */,
+				57126B6623627308000852DD /* ActivityTypesTableViewController.swift */,
+				57126B6823627325000852DD /* LocationsTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		57126B5E23626EA2000852DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57126B6A2362733E000852DD /* Activity.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		57126B5F23626EAC000852DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				57126B4723626E0A000852DD /* AppDelegate.swift */,
 				57126B4923626E0B000852DD /* SceneDelegate.swift */,
-				57126B4B23626E0B000852DD /* ViewController.swift */,
-				57126B4D23626E0B000852DD /* Main.storyboard */,
-				57126B5023626E13000852DD /* Assets.xcassets */,
 				57126B5223626E13000852DD /* LaunchScreen.storyboard */,
-				57126B5523626E13000852DD /* Info.plist */,
+				57126B5023626E13000852DD /* Assets.xcassets */,
 			);
-			path = ActivityTimeManager;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57126B4323626E0A000852DD /* ActivityTimeManager */ = {
+		57126B4323626E0A000852DD /* ActivityTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57126B5823626E13000852DD /* Build configuration list for PBXNativeTarget "ActivityTimeManager" */;
+			buildConfigurationList = 57126B5823626E13000852DD /* Build configuration list for PBXNativeTarget "ActivityTimer" */;
 			buildPhases = (
 				57126B4023626E0A000852DD /* Sources */,
 				57126B4123626E0A000852DD /* Frameworks */,
@@ -82,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = ActivityTimeManager;
+			name = ActivityTimer;
 			productName = ActivityTimeManager;
-			productReference = 57126B4423626E0A000852DD /* ActivityTimeManager.app */;
+			productReference = 57126B4423626E0A000852DD /* ActivityTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 57126B3F23626E0A000852DD /* Build configuration list for PBXProject "ActivityTimeManager" */;
+			buildConfigurationList = 57126B3F23626E0A000852DD /* Build configuration list for PBXProject "ActivityTimer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57126B4323626E0A000852DD /* ActivityTimeManager */,
+				57126B4323626E0A000852DD /* ActivityTimer */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57126B4C23626E0B000852DD /* ViewController.swift in Sources */,
+				57126B6723627308000852DD /* ActivityTypesTableViewController.swift in Sources */,
+				57126B61236271BA000852DD /* ActivitiesTableViewController.swift in Sources */,
+				57126B65236272B8000852DD /* EditActivityTableViewController.swift in Sources */,
+				57126B63236271EB000852DD /* NewActivityTableViewController.swift in Sources */,
 				57126B4823626E0B000852DD /* AppDelegate.swift in Sources */,
 				57126B4A23626E0B000852DD /* SceneDelegate.swift in Sources */,
+				57126B6B2362733E000852DD /* Activity.swift in Sources */,
+				57126B6923627325000852DD /* LocationsTableViewController.swift in Sources */,
+				57126B6D23627375000852DD /* ActivityTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJFFUHX59U;
-				INFOPLIST_FILE = ActivityTimeManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ActivityTimer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJFFUHX59U;
-				INFOPLIST_FILE = ActivityTimeManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ActivityTimer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57126B3F23626E0A000852DD /* Build configuration list for PBXProject "ActivityTimeManager" */ = {
+		57126B3F23626E0A000852DD /* Build configuration list for PBXProject "ActivityTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57126B5623626E13000852DD /* Debug */,
@@ -328,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57126B5823626E13000852DD /* Build configuration list for PBXNativeTarget "ActivityTimeManager" */ = {
+		57126B5823626E13000852DD /* Build configuration list for PBXNativeTarget "ActivityTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57126B5923626E13000852DD /* Debug */,
